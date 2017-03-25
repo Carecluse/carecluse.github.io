@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>设计模式之策略模式 | 壹 贰 叁 ✔</title>
+    <title>设计模式之策略模式 | Carecluse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Carecluse">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="设计模式之策略模式">
 <meta property="og:url" content="http://yoursite.com/2015/12/05/设计模式之策略模式/index.html">
-<meta property="og:site_name" content="壹 贰 叁 ✔">
+<meta property="og:site_name" content="Carecluse">
 <meta property="og:description" content="&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;&amp;#x7B56;&amp;#x7565;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF1F;&amp;#x7B56;&amp;#x7565;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF08;Strategy Pattern&amp;#xFF09;&amp;#xFF1A;&amp;#x5B9A;&amp;#x4E49;&amp;#x4E00;&amp;#x7CFB;&amp;#x5217;&amp;#x7684;&amp;#x7B97;&amp;#x6CD5;">
 <meta property="og:updated_time" content="2017-03-23T15:46:13.875Z">
 <meta name="twitter:card" content="summary">
@@ -23,7 +23,7 @@
 <meta name="twitter:description" content="&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;&amp;#x7B56;&amp;#x7565;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF1F;&amp;#x7B56;&amp;#x7565;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF08;Strategy Pattern&amp;#xFF09;&amp;#xFF1A;&amp;#x5B9A;&amp;#x4E49;&amp;#x4E00;&amp;#x7CFB;&amp;#x5217;&amp;#x7684;&amp;#x7B97;&amp;#x6CD5;">
 
     
-    <link rel="alternative" href="/atom.xml" title="壹 贰 叁 ✔" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Carecluse" type="application/atom+xml">
     
     
     <link rel="icon" href="/img/favicon.ico">
@@ -41,14 +41,14 @@
 <div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/logo.png" alt="壹 贰 叁 ✔" title="壹 贰 叁 ✔"/></a>
+				<a href="/"><img src="/img/logo.png" alt="Carecluse" title="Carecluse"/></a>
 			</div>
 			
 			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="壹 贰 叁 ✔">壹 贰 叁 ✔</a></h1>
-				<h2 class="blog-motto">OMG！上帝是个程序员！</h2>
+				<h1 class="site-name"><a href="/" title="Carecluse">Carecluse</a></h1>
+				<h2 class="blog-motto">Where There is Life There is Struggle ！</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -64,7 +64,7 @@
  					
 					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
 					</form>
 					
 					</li>
@@ -86,14 +86,14 @@
 		<a href="/about" title="Carecluse" target="_blank" itemprop="author">Carecluse</a>
 		
   <p class="article-time">
-    <time datetime="2015-12-05T14:20:32.000Z" itemprop="datePublished"> 发表于 2015-12-05</time>
+    <time datetime="2015-12-05T14:20:32.000Z" itemprop="datePublished"> Published 2015-12-05</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
+			<strong class="toc-title">Contents</strong>
 		
 			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是策略模式？"><span class="toc-number">1.</span> <span class="toc-text">什么是策略模式？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#策略模式的动机？"><span class="toc-number">2.</span> <span class="toc-text">策略模式的动机？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#策略模式的优缺点？"><span class="toc-number">3.</span> <span class="toc-text">策略模式的优缺点？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#优点："><span class="toc-number">3.0.1.</span> <span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#缺点："><span class="toc-number">3.0.2.</span> <span class="toc-text">缺点：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#策略模式的应用场景？"><span class="toc-number">4.</span> <span class="toc-text">策略模式的应用场景？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">5.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#感谢"><span class="toc-number">6.</span> <span class="toc-text">感谢</span></a></li></ol>
 		
@@ -139,7 +139,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2015/12/05/设计模式之策略模式/" data-title="设计模式之策略模式 | 壹 贰 叁 ✔" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2015/12/05/设计模式之策略模式/" data-title="设计模式之策略模式 | Carecluse" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -166,17 +166,17 @@
 	
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
+  <strong class="toc-title">Contents</strong>
  
  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是策略模式？"><span class="toc-number">1.</span> <span class="toc-text">什么是策略模式？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#策略模式的动机？"><span class="toc-number">2.</span> <span class="toc-text">策略模式的动机？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#策略模式的优缺点？"><span class="toc-number">3.</span> <span class="toc-text">策略模式的优缺点？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#优点："><span class="toc-number">3.0.1.</span> <span class="toc-text">优点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#缺点："><span class="toc-number">3.0.2.</span> <span class="toc-text">缺点：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#策略模式的应用场景？"><span class="toc-number">4.</span> <span class="toc-text">策略模式的应用场景？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">5.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#感谢"><span class="toc-number">6.</span> <span class="toc-text">感谢</span></a></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
@@ -184,7 +184,7 @@
 
   
 <div class="categorieslist">
-	<p class="asidetitle">分类</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 		  
@@ -201,7 +201,7 @@
 
   
 <div class="tagslist">
-	<p class="asidetitle">标签</p>
+	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
 			
@@ -217,14 +217,8 @@
 
 
   <div class="linkslist">
-  <p class="asidetitle">友情链接</p>
+  <p class="asidetitle">Links</p>
     <ul>
-        
-          <li>
-            
-            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
-            
-          </li>
         
     </ul>
 </div>
@@ -233,11 +227,11 @@
 
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
   <div class="weiboshow">
-  <p class="asidetitle">新浪微博</p>
+  <p class="asidetitle">Weibo</p>
     <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=&dpc=1"></iframe>
 </div>
 
@@ -255,7 +249,7 @@
 	
 	<section class="info">
 		<p> Hello ,I&#39;m Carecluse. <br/>
-			I always believe in one motto: tomorrow is a brand new day!</p>
+			I always believe in one motto: tomorrow is a brand new day !</p>
 	</section>
 	 
 	<div class="social-font" class="clearfix">
@@ -462,7 +456,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
