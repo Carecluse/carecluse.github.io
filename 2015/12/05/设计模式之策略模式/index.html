@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://yoursite.com/2015/12/05/设计模式之策略模式/index.html">
 <meta property="og:site_name" content="Carecluse">
 <meta property="og:description" content="&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;&amp;#x7B56;&amp;#x7565;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF1F;&amp;#x7B56;&amp;#x7565;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF08;Strategy Pattern&amp;#xFF09;&amp;#xFF1A;&amp;#x5B9A;&amp;#x4E49;&amp;#x4E00;&amp;#x7CFB;&amp;#x5217;&amp;#x7684;&amp;#x7B97;&amp;#x6CD5;">
-<meta property="og:updated_time" content="2017-03-23T15:46:13.875Z">
+<meta property="og:updated_time" content="2017-03-25T15:18:16.037Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="设计模式之策略模式">
 <meta name="twitter:description" content="&amp;#x4EC0;&amp;#x4E48;&amp;#x662F;&amp;#x7B56;&amp;#x7565;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF1F;&amp;#x7B56;&amp;#x7565;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF08;Strategy Pattern&amp;#xFF09;&amp;#xFF1A;&amp;#x5B9A;&amp;#x4E49;&amp;#x4E00;&amp;#x7CFB;&amp;#x5217;&amp;#x7684;&amp;#x7B97;&amp;#x6CD5;">
@@ -46,7 +46,7 @@
 			
 			<div id="textlogo">
 				<h1 class="site-name"><a href="/" title="Carecluse">Carecluse</a></h1>
-				<h2 class="blog-motto">Where There is Life There is Struggle ！</h2>
+				<h2 class="blog-motto">Where There is Life There is Struggle！</h2>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
@@ -99,7 +99,7 @@
 		
 		</div>
 		
-		<h2 id="&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;"><a href="#&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;" class="headerlink" title="&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;"></a>&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;</h2><p>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF08;Strategy Pattern&#xFF09;&#xFF1A;&#x5B9A;&#x4E49;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x7B97;&#x6CD5;&#x5C01;&#x88C5;&#x8D77;&#x6765;&#xFF0C;&#x5E76;&#x8BA9;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x66FF;&#x6362;&#x3002;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x8BA9;&#x7B97;&#x6CD5;&#x72EC;&#x7ACB;&#x4E8E;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x5BA2;&#x6237;&#x800C;&#x53D8;&#x5316;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x653F;&#x7B56;&#x6A21;&#x5F0F;&#xFF08;Policy&#xFF09;&#x3002;</p>
+		<h2 id="&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;"><a href="#&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;" class="headerlink" title="&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;"></a>&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;</h2><p>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF08;Strategy Pattern&#xFF09;&#xFF1A;&#x5B9A;&#x4E49;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x7B97;&#x6CD5;&#x5C01;&#x88C5;&#x8D77;&#x6765;&#xFF0C;&#x5E76;&#x8BA9;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x66FF;&#x6362;&#x3002;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x8BA9;&#x7B97;&#x6CD5;&#x72EC;&#x7ACB;&#x4E8E;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x5BA2;&#x6237;&#x800C;&#x53D8;&#x5316;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x653F;&#x7B56;&#x6A21;&#x5F0F;&#xFF08;Policy&#xFF09;&#x3002;<br><a id="more"></a></p>
 <h2 id="&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x52A8;&#x673A;&#xFF1F;"><a href="#&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x52A8;&#x673A;&#xFF1F;" class="headerlink" title="&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x52A8;&#x673A;&#xFF1F;"></a>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x52A8;&#x673A;&#xFF1F;</h2><h2 id="&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#xFF1F;"><a href="#&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#xFF1F;" class="headerlink" title="&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#xFF1F;"></a>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#xFF1F;</h2><h4 id="&#x4F18;&#x70B9;&#xFF1A;"><a href="#&#x4F18;&#x70B9;&#xFF1A;" class="headerlink" title="&#x4F18;&#x70B9;&#xFF1A;"></a>&#x4F18;&#x70B9;&#xFF1A;</h4><ul>
 <li>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x201C;&#x5F00;&#x95ED;&#x539F;&#x5219;&#x201D;&#x7684;&#x5B8C;&#x7F8E;&#x652F;&#x6301;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x4FEE;&#x6539;&#x539F;&#x56E0;&#x7CFB;&#x7EDF;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x9009;&#x62E9;&#x7B97;&#x6CD5;&#x6216;&#x884C;&#x4E3A;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7075;&#x6D3B;&#x5730;&#x589E;&#x52A0;&#x65B0;&#x7684;&#x7B97;&#x6CD5;&#x6216;&#x884C;&#x4E3A;&#x3002;</li>
 <li>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x63D0;&#x4F9B;&#x4E86;&#x7BA1;&#x7406;&#x76F8;&#x5173;&#x7684;&#x7B97;&#x6CD5;&#x65CF;&#x7684;&#x529E;&#x6CD5;&#x3002;</li>
@@ -220,21 +220,14 @@
   <p class="asidetitle">Links</p>
     <ul>
         
+          <li>
+            
+            	<a href="https://juejin.im/" target="_blank" title="一款面向互联网技术人的内容分享平台">掘金</a>
+            
+          </li>
+        
     </ul>
 </div>
-
-  
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
-</div>
-
-  <div class="weiboshow">
-  <p class="asidetitle">Weibo</p>
-    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=&dpc=1"></iframe>
-</div>
-
 
 </aside>
 </div>
@@ -262,6 +255,8 @@
 		
 		
 		
+		
+		<a href="mailto:dysour@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
 		
 	</div>
 			
@@ -412,27 +407,6 @@ $(document).ready(function(){
 
 
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.article-content').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
-      var alt = this.alt;
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
-    });
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'article' + i);
-    });
-  });
-  if($.fancybox){
-    $('.fancybox').fancybox();
-  }
-}); 
-</script>
-
 
 
 <!-- Analytics Begin -->
@@ -450,6 +424,8 @@ var _hmt = _hmt || [];
 </script>
 
 
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261581549'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1261581549' type='text/javascript'%3E%3C/script%3E"));</script>
 
 <!-- Analytics End -->
 

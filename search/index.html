@@ -1,10 +1,10 @@
 
-  <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="zh-Hans">
 <head>
   <meta charset="UTF-8">
   
-    <title>Archives | Carecluse</title>
+    <title>search | Carecluse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Carecluse">
@@ -12,11 +12,12 @@
 
     
     <meta property="og:type" content="website">
-<meta property="og:title" content="Carecluse">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:title" content="search">
+<meta property="og:url" content="http://yoursite.com/search/index.html">
 <meta property="og:site_name" content="Carecluse">
+<meta property="og:updated_time" content="2017-03-25T15:34:04.772Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Carecluse">
+<meta name="twitter:title" content="search">
 
     
     <link rel="alternative" href="/atom.xml" title="Carecluse" type="application/atom+xml">
@@ -70,47 +71,25 @@
       </header>
       <div id="container">
         
-
-<div class="archive-title" >
-  <h2 class="archive-icon">Archives</h2>
-  
-  <div class="archiveslist archive-float clearfix">
-   <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">Dec 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">Dec 2015</a><span class="archive-list-count">1</span></li></ul>
- </div>
-  
+<div  id="main" class="page">
+  <div id='cse' style='width:100%;text-align:center'>正在加载搜索结果，请稍等。</div>
 </div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2016/12/04/Android-Lifecycle/" title="Android Lifecycle" itemprop="url">
-  
-
-    <time datetime="2016-12-04T15:22:54.000Z" itemprop="datePublished">2016-12-04</time>
-
-
-    <h1 itemprop="name">Android Lifecycle</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2015/12/05/设计模式之策略模式/" title="设计模式之策略模式" itemprop="url">
-  
-
-    <time datetime="2015-12-05T14:20:32.000Z" itemprop="datePublished">2015-12-05</time>
-
-
-    <h1 itemprop="name">设计模式之策略模式</h1>
-
-  </a>
-</section>
-
-
-  </div>
-</div>
+<script src="http://www.google.com.hk/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load('search', '1', {language : 'zh-CN',style: google.loader.themes.MINIMALIST});
+google.setOnLoadCallback(function(){
+  var customSearchControl = new google.search.CustomSearchControl('004936968723408513182:ckzd1cvhwgo');
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.setAutoComplete(true);
+  customSearchControl.draw('cse', options);
+  var match = location.search.match(/q=([^&]*)(&|$)/);
+  if(match && match[1]){
+    var search = decodeURIComponent(match[1]); 
+    customSearchControl.execute(search);
+  }
+},true);
+</script>
 
       </div>
       <footer><div id="footer" >
