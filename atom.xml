@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-26T10:24:00.752Z</updated>
+  <updated>2017-03-26T10:26:17.226Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/12/05/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/"/>
     <id>http://yoursite.com/2016/12/05/设计模式之策略模式/</id>
     <published>2016-12-05T14:20:32.000Z</published>
-    <updated>2017-03-26T10:24:00.752Z</updated>
+    <updated>2017-03-26T10:26:17.226Z</updated>
     
     <content type="html"><![CDATA[<h2 id="&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;"><a href="#&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;" class="headerlink" title="&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;"></a>&#x4EC0;&#x4E48;&#x662F;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF1F;</h2><p>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF08;Strategy Pattern&#xFF09;&#xFF1A;&#x5B9A;&#x4E49;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x7B97;&#x6CD5;&#x5C01;&#x88C5;&#x8D77;&#x6765;&#xFF0C;&#x5E76;&#x8BA9;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x66FF;&#x6362;&#x3002;&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x8BA9;&#x7B97;&#x6CD5;&#x72EC;&#x7ACB;&#x4E8E;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x5BA2;&#x6237;&#x800C;&#x53D8;&#x5316;&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x653F;&#x7B56;&#x6A21;&#x5F0F;&#xFF08;Policy&#xFF09;&#x3002;<br><a id="more"></a></p>
 <h2 id="&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x52A8;&#x673A;&#xFF1F;"><a href="#&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x52A8;&#x673A;&#xFF1F;" class="headerlink" title="&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x52A8;&#x673A;&#xFF1F;"></a>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x52A8;&#x673A;&#xFF1F;</h2><h2 id="&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#xFF1F;"><a href="#&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#xFF1F;" class="headerlink" title="&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#xFF1F;"></a>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#xFF1F;</h2><h4 id="&#x4F18;&#x70B9;&#xFF1A;"><a href="#&#x4F18;&#x70B9;&#xFF1A;" class="headerlink" title="&#x4F18;&#x70B9;&#xFF1A;"></a>&#x4F18;&#x70B9;&#xFF1A;</h4><ul>
@@ -51,7 +51,7 @@
       <category term="设计模式" scheme="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-      <category term="设计模式 Java" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-Java/"/>
+      <category term="设计模式" scheme="http://yoursite.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
