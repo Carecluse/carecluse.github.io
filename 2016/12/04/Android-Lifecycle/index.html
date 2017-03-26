@@ -4,22 +4,29 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Android Lifecycle | Carecluse</title>
+    <title>Android 中的 Context | Carecluse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Carecluse">
     
 
     
-    <meta property="og:type" content="article">
-<meta property="og:title" content="Android Lifecycle">
+    <meta name="description" content="Context &amp;#x5230;&amp;#x5E95;&amp;#x662F;&amp;#x4EC0;&amp;#x4E48;&amp;#xFF1F;Context &amp;#x6709;&amp;#x54EA;&amp;#x4E9B;&amp;#x7C7B;&amp;#x578B;&amp;#xFF1F;
+Context &amp;#x7684;&amp;#x4F5C;&amp;#x7528;&amp;#x57DF;&amp;#xFF1F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android 中的 Context">
 <meta property="og:url" content="http://yoursite.com/2016/12/04/Android-Lifecycle/index.html">
 <meta property="og:site_name" content="Carecluse">
-<meta property="og:image" content="http://yoursite.com/2016/12/04/Android-Lifecycle/complete_android_fragment_lifecycle.png">
-<meta property="og:updated_time" content="2016-12-05T14:00:44.270Z">
+<meta property="og:description" content="Context &amp;#x5230;&amp;#x5E95;&amp;#x662F;&amp;#x4EC0;&amp;#x4E48;&amp;#xFF1F;Context &amp;#x6709;&amp;#x54EA;&amp;#x4E9B;&amp;#x7C7B;&amp;#x578B;&amp;#xFF1F;
+Context &amp;#x7684;&amp;#x4F5C;&amp;#x7528;&amp;#x57DF;&amp;#xFF1F;">
+<meta property="og:image" content="http://yoursite.com/2016/12/04/Android-Lifecycle/Context继承关系.png">
+<meta property="og:image" content="http://yoursite.com/2016/12/04/Android-Lifecycle/Context作用域.png">
+<meta property="og:updated_time" content="2017-03-26T07:37:03.408Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android Lifecycle">
-<meta name="twitter:image" content="http://yoursite.com/2016/12/04/Android-Lifecycle/complete_android_fragment_lifecycle.png">
+<meta name="twitter:title" content="Android 中的 Context">
+<meta name="twitter:description" content="Context &amp;#x5230;&amp;#x5E95;&amp;#x662F;&amp;#x4EC0;&amp;#x4E48;&amp;#xFF1F;Context &amp;#x6709;&amp;#x54EA;&amp;#x4E9B;&amp;#x7C7B;&amp;#x578B;&amp;#xFF1F;
+Context &amp;#x7684;&amp;#x4F5C;&amp;#x7528;&amp;#x57DF;&amp;#xFF1F;">
+<meta name="twitter:image" content="http://yoursite.com/2016/12/04/Android-Lifecycle/Context继承关系.png">
 
     
     <link rel="alternative" href="/atom.xml" title="Carecluse" type="application/atom+xml">
@@ -78,7 +85,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/12/04/Android-Lifecycle/" title="Android Lifecycle" itemprop="url">Android Lifecycle</a>
+      <a href="/2016/12/04/Android-Lifecycle/" title="Android 中的 Context" itemprop="url">Android 中的 Context</a>
   </h1>
   <p class="article-author">By
        
@@ -94,11 +101,12 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Context-到底是什么？"><span class="toc-number">1.</span> <span class="toc-text">Context 到底是什么？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Context-有哪些类型？"><span class="toc-number">2.</span> <span class="toc-text">Context 有哪些类型？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Context-的作用域？"><span class="toc-number">3.</span> <span class="toc-text">Context 的作用域？</span></a></li></ol>
 		
 		</div>
 		
-		<p><img src="/2016/12/04/Android-Lifecycle/complete_android_fragment_lifecycle.png" alt="complete_android_fragment_lifecycle"></p>
+		<h1 id="Context-&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"><a href="#Context-&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;" class="headerlink" title="Context &#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;"></a>Context &#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h1><h1 id="Context-&#x6709;&#x54EA;&#x4E9B;&#x7C7B;&#x578B;&#xFF1F;"><a href="#Context-&#x6709;&#x54EA;&#x4E9B;&#x7C7B;&#x578B;&#xFF1F;" class="headerlink" title="Context &#x6709;&#x54EA;&#x4E9B;&#x7C7B;&#x578B;&#xFF1F;"></a>Context &#x6709;&#x54EA;&#x4E9B;&#x7C7B;&#x578B;&#xFF1F;</h1><p><img src="/2016/12/04/Android-Lifecycle/Context&#x7EE7;&#x627F;&#x5173;&#x7CFB;.png" alt="Context&#x7EE7;&#x627F;&#x5173;&#x7CFB;"></p>
+<h1 id="Context-&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF1F;"><a href="#Context-&#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF1F;" class="headerlink" title="Context &#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF1F;"></a>Context &#x7684;&#x4F5C;&#x7528;&#x57DF;&#xFF1F;</h1><p><img src="/2016/12/04/Android-Lifecycle/Context&#x4F5C;&#x7528;&#x57DF;.png" alt="Context&#x4F5C;&#x7528;&#x57DF;"></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -121,7 +129,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2016/12/04/Android-Lifecycle/" data-title="Android Lifecycle | Carecluse" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2016/12/04/Android-Lifecycle/" data-title="Android 中的 Context | Carecluse" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -159,7 +167,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Context-到底是什么？"><span class="toc-number">1.</span> <span class="toc-text">Context 到底是什么？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Context-有哪些类型？"><span class="toc-number">2.</span> <span class="toc-text">Context 有哪些类型？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Context-的作用域？"><span class="toc-number">3.</span> <span class="toc-text">Context 的作用域？</span></a></li></ol>
  
   </div>
 
